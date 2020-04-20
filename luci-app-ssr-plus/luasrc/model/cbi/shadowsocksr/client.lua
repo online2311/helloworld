@@ -15,11 +15,12 @@ m:section(SimpleSection).template  = "shadowsocksr/status"
 local server_table = {}
 uci:foreach(shadowsocksr, "servers", function(s)
 	if s.alias then
-		server_table[s[".name"]] = "%s" %{string.upper(s.alias}
+			server_table[s[".name"]] = "%s" %{s.alias}
 	elseif s.server and s.server_port then
-		server_table[s[".name"]] = "%s:%s" %{string.upper(s.server, s.server_port}
+			server_table[s[".name"]] = "%s:%s" %{s.server, s.server_port}
 	end
 end)
+
 
 local key_table = {}
 for key,_ in pairs(server_table) do
