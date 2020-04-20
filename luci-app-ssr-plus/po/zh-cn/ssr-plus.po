@@ -5,9 +5,6 @@ msgstr "Content-Type: text/plain; charset=UTF-8\n"
 msgid "ShadowSocksR Plus+"
 msgstr "链路优化"
 
-msgid "ShadowsocksR Plus+" 
-msgstr "链路优化"
-
 msgid "ShadowSocksR Client"
 msgstr "客户端"
 
