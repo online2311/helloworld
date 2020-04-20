@@ -30,7 +30,7 @@ o = s:option(ListValue, "auto_update_time", translate("Update time (every day)")
 for t = 0,23 do
 o:value(t, t..":00")
 end
-o.default=2
+o.default=4
 o.rmempty = false
 
 o = s:option(DynamicList, "subscribe_url", translate("Subscribe URL"))
@@ -108,11 +108,6 @@ node.write = function(self, section)
   luci.http.redirect(luci.dispatcher.build_url("admin", "services", "shadowsocksr", "client"))
 end
 
-o = s:option(Flag, "switch_enable", translate("Auto Switch"))
-o.rmempty = false
-function o.cfgvalue(...)
-	return Value.cfgvalue(...) or 1
-end
 
 m:append(Template("shadowsocksr/server_list"))
 

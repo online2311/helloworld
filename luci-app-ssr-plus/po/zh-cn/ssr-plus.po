@@ -5,6 +5,9 @@ msgstr "Content-Type: text/plain; charset=UTF-8\n"
 msgid "ShadowSocksR Plus+"
 msgstr "链路优化"
 
+msgid "ShadowsocksR Plus+" 
+msgstr "链路优化"
+
 msgid "ShadowSocksR Client"
 msgstr "客户端"
 
@@ -408,7 +411,7 @@ msgid "ShadowSocksR Plus+ Settings"
 msgstr "链路优化设置"
 
 msgid "Main Server"
-msgstr "主服务器"
+msgstr "全局服务器"
 
 msgid "Anti-pollution DNS Server"
 msgstr "访问国外域名DNS服务器"
@@ -432,7 +435,7 @@ msgid "Auto Update Server subscription, GFW list and CHN route"
 msgstr "自动更新服务器订阅、GFW列表和 CHN路由表"
 
 msgid "Subscribe URL"
-msgstr "SS/SSR/V2/TROJAN订阅URL"
+msgstr "订阅URL"
 
 msgid "Subscribe Filter Words"
 msgstr "订阅节点关键字过滤"
@@ -495,10 +498,10 @@ msgid "LAN IP AC"
 msgstr "LAN IP访问控制"
 
 msgid "Game Mode UDP Server"
-msgstr "游戏模式UDP中继服务器"
+msgstr "UDP代理服务器"
 
 msgid "Game Mode UDP Relay"
-msgstr "游戏模式UDP中继"
+msgstr "UDP透明代理"
 
 msgid "Server failsafe auto swith and custom update settings"
 msgstr "服务器节点故障自动切换/广告屏蔽/国内IP段数据库更新设置"
