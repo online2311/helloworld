@@ -1,8 +1,12 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=UTF-8\n"
 
+
+msgid "ShadowSocksR Plus+"
+msgstr "链路优化"
+
 msgid "ShadowSocksR Client"
-msgstr "ShadowSocksR 客户端"
+msgstr "客户端"
 
 msgid "Enable"
 msgstr "启用"
@@ -14,10 +18,10 @@ msgid "Log"
 msgstr "日志"
 
 msgid "ShadowSocksR is running"
-msgstr "ShadowSocksR 客户端运行中"
+msgstr "客户端运行中"
 
 msgid "ShadowSocksR is not running"
-msgstr "ShadowSocksR 客户端未运行"
+msgstr "客户端未运行"
 
 msgid "Global Setting"
 msgstr "全局设置"
@@ -26,7 +30,7 @@ msgid "Global Server"
 msgstr "全局服务器"
 
 msgid "ShadowSocksR SOCK5 Proxy is running"
-msgstr "ShadowSocksR SOCK5代理运行中"
+msgstr "SOCK5代理运行中"
 
 msgid "UDP Relay Server"
 msgstr "UDP中继服务器"
@@ -122,13 +126,13 @@ msgid "SSR Server"
 msgstr "服务端"
 
 msgid "ShadowSocksR Server"
-msgstr "ShadowSocksR 服务端"
+msgstr "服务端"
 
 msgid "ShadowSocksR Server is running"
-msgstr "ShadowSocksR 服务端运行中"
+msgstr "服务端运行中"
 
 msgid "ShadowSocksR Server is not running"
-msgstr "ShadowSocksR 服务端未运行"
+msgstr "服务端未运行"
 
 msgid "Enable Server"
 msgstr "启动服务端"
@@ -275,7 +279,7 @@ msgid "China IP Data"
 msgstr "【国内IP段】数据库"
 
 msgid "Netflix IP Data"
-msgstr "【Netflix IP段】数据库"
+msgstr "【Office365 IP段】数据库"
 
 msgid "Advertising Data"
 msgstr "【广告屏蔽】数据库"
@@ -338,10 +342,10 @@ msgid "Chnroute Update url"
 msgstr "国内IP段更新URL"
 
 msgid "nfip_url"
-msgstr "Netflix IP段更新URL"
+msgstr "Office365 IP段更新URL"
 
 msgid "Customize Netflix IP Url"
-msgstr "自定义Netflix IP更新URL（默认项目地址：https://github.com/QiuSimons/Netflix_IP）"
+msgstr "自定义Office365 IP更新URL"
 
 msgid "Enable Process Deamon"
 msgstr "启用进程自动守护"
@@ -401,7 +405,7 @@ msgid "GFW List"
 msgstr "GFW列表"
 
 msgid "ShadowSocksR Plus+ Settings"
-msgstr "ShadowSocksR Plus+ 设置（支持SS/SSR/V2RAY/TROJAN/SOCKS5/TUN）"
+msgstr "链路优化设置"
 
 msgid "Main Server"
 msgstr "主服务器"
@@ -635,13 +639,13 @@ msgid "Redirect traffic to this network interface"
 msgstr "分流到这个网络接口"
 
 msgid "Netflix Node"
-msgstr "Netflix 分流服务器"
+msgstr "Office365 分流服务器"
 
 msgid "Netflix Domain List"
-msgstr "Netflix 分流域名列表"
+msgstr "Office365 分流域名列表"
 
 msgid "Netflix IP List"
-msgstr "Netflix 分流IP列表"
+msgstr "Office365 分流IP列表"
 
 msgid "External Proxy Mode"
 msgstr "分流服务器（前置）代理"
