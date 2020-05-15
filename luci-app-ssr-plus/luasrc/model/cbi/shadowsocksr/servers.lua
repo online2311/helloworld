@@ -94,11 +94,6 @@ o = s:option(DummyValue, "server", translate("Ping Latency"))
 o.template="shadowsocksr/ping"
 o.width="10%"
 
-node = s:option(Button,"apply_node",translate("Apply"))
-node.inputstyle = "apply"
-node.write = function(self, section)
-end
-
 
 m:append(Template("shadowsocksr/server_list"))
 
