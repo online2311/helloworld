@@ -179,7 +179,7 @@ msgid "Edit ShadowSocksR Server"
 msgstr "编辑服务器配置"
 
 msgid "Alias"
-msgstr "别名"
+msgstr "节点名称"
 
 msgid "Server"
 msgstr "服务器"
