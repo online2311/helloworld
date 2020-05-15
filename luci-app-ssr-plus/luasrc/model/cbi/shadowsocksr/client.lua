@@ -5,22 +5,18 @@
 local m, s, sec, o, kcp_enable
 local shadowsocksr = "shadowsocksr"
 local uci = luci.model.uci.cursor()
-
-local sys = require "luci.sys"
-
 m = Map(shadowsocksr, translate("ShadowSocksR Plus+ Settings"))
 
-m:section(SimpleSection).template  = "shadowsocksr/status"
+m:section(SimpleSection).template = "shadowsocksr/status"
 
 local server_table = {}
 uci:foreach(shadowsocksr, "servers", function(s)
 	if s.alias then
-			server_table[s[".name"]] = "%s" %{s.alias}
+		server_table[s[".name"]] = "%s" %{s.alias}
 	elseif s.server and s.server_port then
-			server_table[s[".name"]] = "%s:%s" %{s.server, s.server_port}
+		server_table[s[".name"]] = "%s:%s" %{s.server, s.server_port}
 	end
 end)
-
 
 local key_table = {}
 for key,_ in pairs(server_table) do
@@ -50,6 +46,11 @@ o:value("same", translate("Same as Global Server"))
 for _,key in pairs(key_table) do o:value(key,server_table[key]) end
 o.default = "nil"
 o.rmempty = false
+
+o = s:option(Flag, "netflix_proxy", translate("External Proxy Mode"))
+o.rmempty = false
+o.description = translate("Forward Netflix Proxy through Main Proxy")
+o.default="0"
 
 o = s:option(ListValue, "threads", translate("Multi Threads Option"))
 o:value("0", translate("Auto Threads"))
@@ -101,5 +102,4 @@ o:depends("pdnsd_enable", "2")
 o.description = translate("Custom DNS Server format as IP:PORT (default: 8.8.4.4:53)")
 
 return m
-
 

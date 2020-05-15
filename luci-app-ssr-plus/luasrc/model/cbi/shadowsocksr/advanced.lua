@@ -68,5 +68,20 @@ o:value("https://raw.githubusercontent.com/online2311/Office365_IP/master/Office
 o.default = "https://raw.githubusercontent.com/online2311/Office365_IP/master/Office365_only.txtt"
 o.description = translate("Customize Netflix IP Url")
 
+-- [[ SOCKS5 Proxy ]]--
+s = m:section(TypedSection, "socks5_proxy", translate("Global SOCKS5 Proxy Server"))
+s.anonymous = true
+
+o = s:option(ListValue, "server", translate("Server"))
+o:value("nil", translate("Disable"))
+o:value("same", translate("Same as Global Server"))
+for _,key in pairs(key_table) do o:value(key,server_table[key]) end
+o.default = "nil"
+o.rmempty = false
+
+o = s:option(Value, "local_port", translate("Local Port"))
+o.datatype = "port"
+o.default = 1080
+o.rmempty = false
 
 return m
