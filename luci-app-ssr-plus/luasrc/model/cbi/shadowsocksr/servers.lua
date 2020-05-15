@@ -32,10 +32,6 @@ o.rmempty = false
 o = s:option(DynamicList, "subscribe_url", translate("Subscribe URL"))
 o.rmempty = true
 
-o = s:option(Value, "filter_words", translate("Subscribe Filter Words"))
-o.rmempty = true
-o.description = translate("Filter Words splited by /")
-
 o = s:option(Button,"update_Sub",translate("Update Subscribe List"))
 o.inputstyle = "reload"
 o.description = translate("Update subscribe url list first")
@@ -101,11 +97,6 @@ o.width="10%"
 node = s:option(Button,"apply_node",translate("Apply"))
 node.inputstyle = "apply"
 node.write = function(self, section)
-	uci:set("shadowsocksr", '@global[0]', 'global_server', section)
-	uci:save("shadowsocksr")
-	uci:commit("shadowsocksr")
-	luci.sys.exec("/etc/init.d/shadowsocksr restart")
-	luci.http.redirect(luci.dispatcher.build_url("admin", "services", "shadowsocksr", "client"))
 end
 
 

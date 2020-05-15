@@ -114,21 +114,7 @@ if uci:get_first(shadowsocksr, 'global', 'pdnsd_enable', '0') ~= '0' then
 	end
 end
 
-s=m:field(DummyValue,"sock5_run",translate("Global SOCKS5 Proxy Server"))
-s.rawhtml = true
-if sock5_run == 1 then
-	s.value =font_blue .. bold_on .. translate("Running") .. bold_off .. font_off
-else
-	s.value = translate("Not Running")
-end
 
-s=m:field(DummyValue,"server_run",translate("Local Servers"))
-s.rawhtml = true
-if server_run == 1 then
-	s.value =font_blue .. bold_on .. translate("Running") .. bold_off .. font_off
-else
-	s.value = translate("Not Running")
-end
 
 if nixio.fs.access("/usr/bin/kcptun-client") then
 	s=m:field(DummyValue,"kcp_version",translate("KcpTun Version"))
