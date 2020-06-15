@@ -114,8 +114,6 @@ if uci:get_first(shadowsocksr, 'global', 'pdnsd_enable', '0') ~= '0' then
 	end
 end
 
-
-
 if nixio.fs.access("/usr/bin/kcptun-client") then
 	s=m:field(DummyValue,"kcp_version",translate("KcpTun Version"))
 	s.rawhtml = true

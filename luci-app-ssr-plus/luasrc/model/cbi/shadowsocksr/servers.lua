@@ -78,13 +78,10 @@ s.addremove = false
 s.template = "cbi/tblsection"
 s.sortable = false
 
-
-
 o = s:option(DummyValue, "alias", translate("Alias"))
 function o.cfgvalue(...)
 	return Value.cfgvalue(...) or translate("None")
 end
-
 
 o = s:option(DummyValue, "server_port", translate("Socket Connected"))
 o.template="shadowsocksr/socket"
@@ -93,7 +90,6 @@ o.width="10%"
 o = s:option(DummyValue, "server", translate("Ping Latency"))
 o.template="shadowsocksr/ping"
 o.width="10%"
-
 
 m:append(Template("shadowsocksr/server_list"))
 

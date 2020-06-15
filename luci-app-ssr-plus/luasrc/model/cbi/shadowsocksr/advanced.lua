@@ -61,11 +61,12 @@ o.default = "https://cdn.jsdelivr.net/gh/gfwlist/gfwlist/gfwlist.txt"
 
 o = s:option(Value, "chnroute_url", translate("Chnroute Update url"))
 o:value("https://ispip.clang.cn/all_cn.txt", translate("Clang.CN"))
+o:value("https://ispip.clang.cn/all_cn_cidr.txt", translate("Clang.CN.CIDR"))
 o.default = "https://ispip.clang.cn/all_cn.txt"
 
 o = s:option(Value, "nfip_url", translate("nfip_url"))
-o:value("https://raw.githubusercontent.com/online2311/Office365_IP/master/Office365_only.txt", translate("Office365 IP Only"))
-o.default = "https://raw.githubusercontent.com/online2311/Office365_IP/master/Office365_only.txtt"
+o:value("https://cdn.jsdelivr.net/gh/online2311/Office365_IP/Office365_only.txt", translate("Office365 IP Only"))
+o.default = "https://cdn.jsdelivr.net/gh/online2311/Office365_IP/Office365_only.txt"
 o.description = translate("Customize Netflix IP Url")
 
 return m
