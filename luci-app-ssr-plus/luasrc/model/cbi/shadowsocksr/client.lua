@@ -47,6 +47,11 @@ for _,key in pairs(key_table) do o:value(key,server_table[key]) end
 o.default = "nil"
 o.rmempty = false
 
+o = s:option(Flag, "netflix_proxy", translate("External Proxy Mode"))
+o.rmempty = false
+o.description = translate("Forward Netflix Proxy through Main Proxy")
+o.default="0"
+
 o = s:option(ListValue, "threads", translate("Multi Threads Option"))
 o:value("0", translate("Auto Threads"))
 o:value("1", translate("1 Thread"))
@@ -65,7 +70,7 @@ o:value("gfw", translate("GFW List Mode"))
 o:value("router", translate("IP Route Mode"))
 o:value("all", translate("Global Mode"))
 o:value("oversea", translate("Oversea Mode"))
-o.default = router
+o.default = gfw
 
 o = s:option(ListValue, "dports", translate("Proxy Ports"))
 o:value("1", translate("All Ports"))

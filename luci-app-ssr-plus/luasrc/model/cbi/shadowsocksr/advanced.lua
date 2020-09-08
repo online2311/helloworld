@@ -49,8 +49,9 @@ o = s:option(Flag, "adblock", translate("Enable adblock"))
 o.rmempty = false
 
 o = s:option(Value, "adblock_url", translate("adblock_url"))
-o:value("https://gitee.com/privacy-protection-tools/anti-ad/raw/master/anti-ad-for-dnsmasq.conf", translate("anti-AD"))
-o.default = "https://gitee.com/privacy-protection-tools/anti-ad/raw/master/anti-ad-for-dnsmasq.conf"
+o:value("https://anti-ad.net/anti-ad-for-dnsmasq.conf", translate("anti-AD"))
+o:value("https://easylist-downloads.adblockplus.org/easylistchina+easylist.txt", translate("Easylist China"))
+o.default = "https://anti-ad.net/anti-ad-for-dnsmasq.conf"
 o:depends("adblock", "1")
 o.description = translate("Support AdGuardHome and DNSMASQ format list")
 
@@ -65,8 +66,9 @@ o:value("https://ispip.clang.cn/all_cn_cidr.txt", translate("Clang.CN.CIDR"))
 o.default = "https://ispip.clang.cn/all_cn.txt"
 
 o = s:option(Value, "nfip_url", translate("nfip_url"))
-o:value("https://cdn.jsdelivr.net/gh/online2311/Office365_IP/Office365_only.txt", translate("Office365 IP Only"))
-o.default = "https://cdn.jsdelivr.net/gh/online2311/Office365_IP/Office365_only.txt"
+o:value("https://cdn.jsdelivr.net/gh/QiuSimons/Netflix_IP/NF_only.txt", translate("Netflix IP Only"))
+o:value("https://cdn.jsdelivr.net/gh/QiuSimons/Netflix_IP/getflix.txt", translate("Netflix and AWS"))
+o.default = "https://cdn.jsdelivr.net/gh/QiuSimons/Netflix_IP/NF_only.txt"
 o.description = translate("Customize Netflix IP Url")
 
 return m

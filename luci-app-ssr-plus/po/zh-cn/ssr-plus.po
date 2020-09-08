@@ -64,6 +64,9 @@ msgstr "密码"
 msgid "Encrypt Method"
 msgstr "加密方式"
 
+msgid "VLESS Encryption"
+msgstr "VLESS 加密"
+
 msgid "Transport"
 msgstr "传输协议"
 
@@ -290,7 +293,7 @@ msgid "China IP Data"
 msgstr "【国内IP段】数据库"
 
 msgid "Netflix IP Data"
-msgstr "【Office365 IP段】数据库"
+msgstr "【Netflix IP段】数据库"
 
 msgid "Advertising Data"
 msgstr "【广告屏蔽】数据库"
@@ -353,10 +356,10 @@ msgid "Chnroute Update url"
 msgstr "国内IP段更新URL"
 
 msgid "nfip_url"
-msgstr "Office365 IP段更新URL"
+msgstr "Netflix IP段更新URL"
 
 msgid "Customize Netflix IP Url"
-msgstr "自定义Office365 IP更新URL"
+msgstr "自定义Netflix IP更新URL（默认项目地址：https://github.com/QiuSimons/Netflix_IP）"
 
 msgid "Enable Process Deamon"
 msgstr "启用进程自动守护"
@@ -419,7 +422,7 @@ msgid "ShadowSocksR Plus+ Settings"
 msgstr "链路优化设置"
 
 msgid "Main Server"
-msgstr "全局服务器"
+msgstr "主服务器"
 
 msgid "Anti-pollution DNS Server"
 msgstr "访问国外域名DNS服务器"
@@ -457,8 +460,8 @@ msgstr "更新"
 msgid "Server Count"
 msgstr "服务器节点数量"
 
-msgid "IP black-and-white list"
-msgstr "黑白名单"
+msgid "Block and Allow List"
+msgstr "禁止/通行名单"
 
 msgid "WAN IP AC"
 msgstr "WAN IP访问控制"
@@ -506,10 +509,10 @@ msgid "LAN IP AC"
 msgstr "LAN IP访问控制"
 
 msgid "Game Mode UDP Server"
-msgstr "UDP代理服务器"
+msgstr "游戏模式UDP中继服务器"
 
 msgid "Game Mode UDP Relay"
-msgstr "UDP透明代理"
+msgstr "游戏模式UDP中继"
 
 msgid "Server failsafe auto swith and custom update settings"
 msgstr "服务器节点故障自动切换/广告屏蔽/国内IP段数据库更新设置"
@@ -650,13 +653,13 @@ msgid "Redirect traffic to this network interface"
 msgstr "分流到这个网络接口"
 
 msgid "Netflix Node"
-msgstr "Office365 分流服务器"
+msgstr "Netflix 分流服务器"
 
 msgid "Netflix Domain List"
-msgstr "Office365 分流域名列表"
+msgstr "Netflix 分流域名列表"
 
 msgid "Netflix IP List"
-msgstr "Office365 分流IP列表"
+msgstr "Netflix 分流IP列表"
 
 msgid "External Proxy Mode"
 msgstr "分流服务器（前置）代理"
@@ -675,3 +678,6 @@ msgstr "SOCKS5 代理服务端（全局）"
 
 msgid "warning! Please do not reuse the port!"
 msgstr "警告！请不要重复使用端口！"
+
+msgid "Deny Domain List"
+msgstr "禁止连接的域名"
